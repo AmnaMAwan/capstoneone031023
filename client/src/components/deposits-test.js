@@ -13,7 +13,7 @@ export default function AddDeposit() {
   const [show, setShow]         = React.useState(true);
 
 
-  const apiUrl = 'http://localhost:5050/api/add-deposit';
+  const apiUrl = 'http://143.198.105.14/:5050/api/add-deposit';
 
   const handleNameChange = (e) => {
     //setName(e.target.value);
@@ -49,7 +49,7 @@ function DepositsDetails()
   //useEffect(() => {
     // Fetch individual deposits when the component mounts
     if (user.name) {
-      fetch(`http://localhost:5050/api/deposits/${user.name}`)
+      fetch(`http://143.198.105.14/:5050/api/deposits/${user.name}`)
         .then((response) => response.json())
         .then((data) => {
           setDeposits(data);
@@ -85,7 +85,7 @@ function DepositsDetails()
   };
   useEffect(() => {
     // Fetch the balance for the specified name from your server or API
-    fetch(`http://localhost:5050/api/balance/${user.name}`) // Use the correct API endpoint URL
+    fetch(`http://143.198.105.14:5050/api/balance/${user.name}`) // Use the correct API endpoint URL
       .then((response) => response.json())
       .then((data) => {
         console.log('Received data:', data);
@@ -101,7 +101,7 @@ function DepositsDetails()
   useEffect(() => {
     // Fetch and display the total deposit amount when the deposits change
     if (deposits.length > 0) {
-      fetch(`http://localhost:5050/api/total-deposits/${user.name}`)
+      fetch(`http://143.198.105.14:5050/api/total-deposits/${user.name}`)
         .then((response) => response.json())
         .then((data) => {
           setTotalDeposit(data.sum);
