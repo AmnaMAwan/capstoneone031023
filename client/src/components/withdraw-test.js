@@ -90,7 +90,7 @@ function WithdrawDetails()
   };
   useEffect(() => {
     // Fetch the balance for the specified name from your server or API
-    fetch(`http://l143.198.105.14:5050/api/balance/${user.name}`) // Use the correct API endpoint URL
+    fetch(`http://l43.198.105.14:5050/api/balance/${user.name}`) // Use the correct API endpoint URL
       .then((response) => response.json())
       .then((data) => {
         console.log('Received data:', data);
