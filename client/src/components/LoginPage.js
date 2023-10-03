@@ -107,7 +107,7 @@ return (
 <p className="text-sm text-white text-center">
         No account yet?{' '}
         
-        <NavLink to="/createusers">exa up</NavLink>
+        <NavLink to="/createusers">Sign Up</NavLink>
 
         
       </p>
