@@ -36,7 +36,7 @@ function WithdrawDetails()
   //useEffect(() => {
     // Fetch and display the total deposit amount when the deposits change
     if (withdraws.length > 0) {
-      fetch(`http://localhost:5050/api/total-withdraws/${user.name}`)
+      fetch(`http://143.198.105.14:5050/api/total-withdraws/${user.name}`)
         .then((response) => response.json())
         .then((data) => {
           setTotalWithdraw(data.sum);
@@ -54,7 +54,7 @@ function WithdrawDetails()
   //useEffect(() => {
     // Fetch individual deposits when the component mounts
     if (name) {
-      fetch(`http://localhost:5050/api/withdraws/${user.name}`)
+      fetch(`http://143.198.105.14:5050/api/withdraws/${user.name}`)
         .then((response) => response.json())
         .then((data) => {
           setWithdraws(data);
@@ -90,7 +90,7 @@ function WithdrawDetails()
   };
   useEffect(() => {
     // Fetch the balance for the specified name from your server or API
-    fetch(`http://localhost:5050/api/balance/${user.name}`) // Use the correct API endpoint URL
+    fetch(`http://l143.198.105.14:5050/api/balance/${user.name}`) // Use the correct API endpoint URL
       .then((response) => response.json())
       .then((data) => {
         console.log('Received data:', data);
