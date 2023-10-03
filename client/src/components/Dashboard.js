@@ -86,8 +86,7 @@ useEffect(() => {
     <div>
     <NavigationBar/>
     <h1>Dashboard</h1>
-    <p>Welcome, {user.name}</p><p> Current Balance is :{balance}</p><p> Total Deposits :{totalDeposit}</p>
-Total Withdraws: {totalWithdraws}
+    <p>Welcome, {user.name}</p><p> Current Balance is :{balance}</p>
   </div>
 );
 } 
