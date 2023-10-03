@@ -10,7 +10,7 @@ export default function AddWithdraw() {
   const [totalWithdraw, setTotalWithdraw] = useState(0);
   const [balance, setBalance] = useState(0);
 
-  const apiUrl = 'http://localhost:5050/api/add-withdraw';
+  const apiUrl = 'http://http://143.198.105.14/:5050/api/add-withdraw';
 
   const handleNameChange = (e) => {
     //setName(e.target.value);
