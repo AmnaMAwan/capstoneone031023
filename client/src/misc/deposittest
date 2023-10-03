@@ -1,0 +1,12 @@
+ <ul>
+        {
+        deposits.map((deposit) => (
+          <li key={deposit._id}>
+            Name: {user.name}, Deposit: {deposit.deposit}
+          </li>
+        )
+  }
+      </ul>
+      <h2>Total Deposit:</h2>
+      <p>{totalDeposit}</p>
+    

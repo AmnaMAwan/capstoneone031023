@@ -1,0 +1,25 @@
+<nav>
+
+
+
+
+
+      <ul>
+        
+
+        <li>
+        <a href="/deposit">Deposit</a>
+       
+        </li>
+        <li>
+        <a href="/withdrw">Withdraw</a>
+       
+        </li>
+
+      </ul>
+      
+      
+    </nav>
+  );
+}
+

@@ -1,0 +1,34 @@
+ <>
+          <label>Name:</label>
+          <input type="text" value={user.name} onChange={handleNameChange } />
+        
+        <label>Deposit Amount:</label>
+        <input type="number" value={deposit} onChange={handleDepositChange} />         
+          
+        <button type="submit" onSubmit={handleSubmit}>Submit</button>
+        </>
+  
+        
+      
+      
+
+ 
+<>
+      <ul>
+        {deposits.map((name) => (
+          <li key={deposit.name}>
+            Name: {deposit.name}, Deposit: {deposit.deposit}
+          </li>
+        
+      </ul>
+      
+      ))}
+  />   
+      <h2>Total Deposit:</h2>
+      <p>{totalDeposit}</p>
+      <p> Balance:{balance}</p>
+    </>
+  
+    
+  );
+}
